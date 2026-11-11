@@ -146,7 +146,7 @@ dsh-plugin-reasoning/
 
 再把「推理模块」这一行插进组合树。**二选一**：
 
-- **如果你在使用「外观与特效」母插件**：它已经插入了 `reasoning-module` 行，无需重复操作，重启即可；
+- **如果你的组合里已经有父插件插入了 `reasoning-module` 行**（例如作者的「外观与特效」母插件）：无需重复操作，重启即可；
 - **否则**：编辑 profile 的 `cordis.patch.yml`（用户补丁层，在 bundle 层之后应用），追加：
 
 ```yaml
