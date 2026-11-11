@@ -1,0 +1,12 @@
+# 推理模块 — 基础滑块 + 互斥特效容器。
+#
+# 本组合包选中后，下面的子插件行会出现在「推理模块」详情页的组件列表中；
+# 推理模块自身则通过 外观与特效 的补丁层插入为一个子插件行。
+#
+# 互斥：推理模块 Host 半边会把所有 reasoning-fx-* 行收敛到最多一个启用；
+# 客户端 reasoningModule 服务再保证运行时最多一个特效 activate。
+- insert:
+    - id: reasoning-fx-one
+      name: dsh-reasoning-fx-one
+    - id: reasoning-fx-two
+      name: dsh-reasoning-fx-two

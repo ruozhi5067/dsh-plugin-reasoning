@@ -1,0 +1,49 @@
+{
+  "name": "dsh-reasoning-fx-two",
+  "version": "0.1.0",
+  "description": "特效二 — 为推理模块滑块提供青蓝喷气尾流与两枚环绕卫星；纯合成器轨道动画 + 按需唤醒的 canvas，空闲零逐帧开销。",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src",
+    "locale",
+    "README.md",
+    "icon.svg"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "reasoning-effort",
+    "particles",
+    "effects",
+    "satellites",
+    "jet"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruozhi5067/dsh-plugin-reasoning.git",
+    "directory": "dsh-reasoning-fx-two"
+  },
+  "homepage": "https://github.com/ruozhi5067/dsh-plugin-reasoning#readme",
+  "bugs": {
+    "url": "https://github.com/ruozhi5067/dsh-plugin-reasoning/issues"
+  }
+}

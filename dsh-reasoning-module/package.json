@@ -1,0 +1,54 @@
+{
+  "name": "dsh-reasoning-module",
+  "version": "0.1.0",
+  "description": "推理模块 — 基础推理强度滑块组件，不包含粒子或原子特效。",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "src",
+    "locale",
+    "cordis.patch.yml",
+    "README.md",
+    "icon.svg"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "reasoning-effort",
+    "slider",
+    "reasoning-module"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-model-selection",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruozhi5067/dsh-plugin-reasoning.git",
+    "directory": "dsh-reasoning-module"
+  },
+  "homepage": "https://github.com/ruozhi5067/dsh-plugin-reasoning#readme",
+  "bugs": {
+    "url": "https://github.com/ruozhi5067/dsh-plugin-reasoning/issues"
+  }
+}

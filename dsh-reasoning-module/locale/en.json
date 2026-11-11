@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Reasoning Module",
+    "description": "The base reasoning-effort slider: drag, keyboard adjustment and effort synchronization. Visual effects come from child plugins."
+  }
+}
